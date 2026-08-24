@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Get Started — Remat Technologies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Manrope:wght@200..800&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared.css">
+</head>
+<body>
+
+<!-- ================= GET STARTED WIZARD ================= -->
+<section class="gs-wrap">
+
+  <!-- left visual panel -->
+  <div class="gs-visual">
+    <div class="gs-glow"></div>
+    <div class="gs-grid"></div>
+
+    <div class="gs-coins">
+      <div class="gs-coin gs-coin-1 reveal">
+        <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="37" /></svg>
+        <span>¥</span>
+      </div>
+      <div class="gs-coin gs-coin-2 reveal">
+        <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="37" /></svg>
+        <span>₴</span>
+      </div>
+      <div class="gs-coin gs-coin-3 reveal">
+        <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="37" /></svg>
+        <span>$</span>
+      </div>
+
+      <div class="gs-platform">
+        <svg viewBox="0 0 340 200" fill="none">
+          <path class="gs-plate gs-plate-1" d="M170 0L330 46V96L170 142L10 96V46L170 0Z"/>
+          <path class="gs-plate gs-plate-2" d="M170 30L330 76V126L170 172L10 126V76L170 30Z"/>
+          <path class="gs-plate gs-plate-3" d="M170 60L330 106V156L170 200L10 156V106L170 60Z"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- right form panel -->
+  <div class="gs-form-panel">
+    <form class="gs-form" onsubmit="return false;">
+      <h1 class="gs-title">Let's design your financial infrastructure</h1>
+      <p class="gs-sub">Answer a few questions about your business so we can recommend the right configuration for you.</p>
+
+      <div class="gs-field">
+        <label class="gs-label" for="bizType">What's your business type? <span class="gs-req">*</span></label>
+        <div class="gs-select-wrap">
+          <select id="bizType" class="gs-select" required>
+            <option value="" selected disabled hidden></option>
+            <option value="sme">Financial Institutions
+            <option value="corporate">Savings & Loans and MFIs</option>
+            <option value="fintech">Development Finance Institutions</option>
+            <option value="bank">Broker-Dealers and Capital Market Firms</option>
+            <option value="remittance">Fintechs and Digital Lenders</option>
+          </select>
+          <svg class="gs-select-chevron" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <div class="gs-field">
+        <label class="gs-label">What challenges are you facing in your business? <span class="gs-req">*</span></label>
+
+        <div class="gs-checklist">
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">We lack a secure, centralized environment for regulated communication across internal and external stakeholders
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">We lack real-time visibility across our treasury positions, exposures, and balance sheet
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">Our loan origination process is slow, manual, and fragmented across multiple teams
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">We lack consistent, data-driven credit decisioning across our lending portfolios
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">Our liquidity, interest rate, and funding risks are difficult to model and manage dynamically
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">Our compliance and audit processes are fragmented, making it difficult to maintain complete communication records
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">Critical approvals, document routing, and compliance workflows remain manual and inefficient
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">We identify deteriorating loan accounts too late to take timely corrective action
+          </label>
+
+          <label class="gs-check">
+            <input type="checkbox" name="challenges">
+            <span class="gs-box"></span>
+            <span class="gs-check-text">Regulatory reporting and treasury processes rely too heavily on manual reconciliation and disconnected systems
+          </label>
+        </div>
+      </div>
+
+      <div class="gs-actions">
+        <a href="index.html" class="btn btn-outline">Cancel</a>
+        <button type="submit" class="btn btn-primary gs-continue" disabled>Continue <span class="gs-dot"></span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= GET STARTED — RESULT MODAL ================= -->
+<div class="gsm-overlay" id="gsmOverlay" aria-hidden="true">
+  <div class="gsm-modal" role="dialog" aria-modal="true" aria-labelledby="gsmTitle">
+    <button type="button" class="gsm-close" id="gsmClose" aria-label="Close">
+      <svg viewBox="0 0 14 14" fill="none"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+
+   
+    <form id="gsmForm" onsubmit="return false;">
+      <div class="gsm-field">
+        <label class="gs-label gsm-label" for="gsmCompany">Company Name <span class="gs-req">*</span></label>
+        <input type="text" id="gsmCompany" class="gsm-input" placeholder="e.g. Acme Manufacturing Ltd" required>
+      </div>
+
+      <div class="gsm-field">
+        <label class="gs-label gsm-label" for="gsmEmail">Work Email <span class="gs-req">*</span></label>
+        <input type="email" id="gsmEmail" class="gsm-input" placeholder="name@company.com" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary gsm-cta" id="gsmCta" disabled>View Recommendation <span class="gs-dot"></span></button>
+    </form>
+
+    <!-- recommendation result state -->
+    <div class="gsr-panel" id="gsrPanel" hidden>
+      <h2 class="gsr-heading">We've recommended the Remat Technologies solutions for <span id="gsrCompany">your company</span>.</h2>
+
+      <div class="gsr-grid" id="gsrGrid"><!-- cards injected by JS --></div>
+
+      <div class="gsr-note">
+        <span class="gsr-note-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5C3 5.67 3.67 5 4.5 5h15c.83 0 1.5.67 1.5 1.5v11c0 .83-.67 1.5-1.5 1.5h-15A1.5 1.5 0 013 17.5v-11Z" stroke="currentColor" stroke-width="1.6"/><path d="M4 6.5l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div>
+          <div class="gsr-note-title">Need more inguires, Reach out to our team.</div>
+          <div class="gsr-note-text">Prefer not to wait? Email us directly at <a href="mailto:team@remattechnologies.com">team@remattechnologies.com</a></div>
+        </div>
+      </div>
+
+      <a href="index.html" class="btn btn-primary gsr-back">Back to Homepage <span class="gs-dot"></span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a href="#top" class="footer-brand">
+        <svg class="mark" viewBox="0 0 32 32" fill="none">
+         <rect width="32" height="32" rx="8" fill="#2f6df6"/>
+         <path d="M8 24V8 H15 C17.5 8 19 9.5 19 12 C19 14.5 17.5 16 15 16 H8 L18 24" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+         <path d="M22 9H28 M25 9V24" stroke="#28d6ad" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+        Remat Technologies
+      </a>
+      <p class="footer-blurb">Remat Technologies is a technology solutions company bringing globally proven platforms to West Africa's most important institutions. 
+      </p>
+    </div>
+    <div class="footer-cols">
+       <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="secure.html">Secure Enterprise Communication Platform</a>
+        <a href="treasury.html">Treasury and ALM Platform </a>
+        <a href="Loans.html">Loan Origination and Credit Risk Solutions </a>
+      </div>
+      <div class="footer-col">
+        <h4>Use Cases</h4>
+        <a href="commercial.html">Financial institutions</a>
+        <a href="savings.html">Savings & Loans and MFIs</a>
+        <a href="development.html">Development Finance Institutions</a>
+        <a href="broker.html">Broker-Dealers and Capital Market Firms </a>
+        <a href="fintech.html">Fintechs and Digital Lenders </a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact us</a>
+        <a href="index.html#faq"> FAQs </a>
+      </div>
+    </div>
+  </div>
+<div class="footer-mid">
+    <span class="footer-email">enquiries@remattechnologies.io</span>
+    <div class="footer-social">
+      <a href="#">X (Formerly Twitter)</a>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Remat. All rights reserved.</span>
+     <span class="footer-legal"><a href="#">Terms of Service</a><a href="#">Cookies Policy</a></span>
+    <span>Always Delivering.</span>
+  </div>
+
+  <div class="footer-bigtext">Remat</div>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+  // enable Continue once required fields are answered
+  (function(){
+    const bizType = document.getElementById('bizType');
+    const checks  = document.querySelectorAll('.gs-check input[type="checkbox"]');
+    const cta     = document.querySelector('.gs-continue');
+    function refresh(){
+      const anyChecked = Array.from(checks).some(c => c.checked);
+      const ready = bizType.value !== '' && anyChecked;
+      cta.disabled = !ready;
+    }
+    bizType.addEventListener('change', refresh);
+    checks.forEach(c => c.addEventListener('change', refresh));
+  })();
+
+  // open the result modal from the wizard's Continue button
+  (function(){
+    const overlay = document.getElementById('gsmOverlay');
+    const modal = document.querySelector('.gsm-modal');
+    const openBtn = document.querySelector('.gs-continue');
+    const closeBtn = document.getElementById('gsmClose');
+    const company = document.getElementById('gsmCompany');
+    const email = document.getElementById('gsmEmail');
+    const cta = document.getElementById('gsmCta');
+    const form = document.getElementById('gsmForm');
+    const panel = document.getElementById('gsrPanel');
+    const gsrGrid = document.getElementById('gsrGrid');
+    const gsrCompany = document.getElementById('gsrCompany');
+    let lastFocused = null;
+
+    // maps each challenge checkbox (by order) to the solution it recommends
+   const SOLUTIONS = [
+    {
+        title: "Secure",
+        link: "secure.html",
+        linkText: "Secure Enterprise Communication Platform",
+        desc: "Secure communication, centralized records, and controlled stakeholder collaboration."
+    },
+    {
+        title: "Treasury",
+        link: "treasury.html",
+        linkText: "Treasury and ALM Platform",
+        desc: "Real-time visibility, liquidity management, and better control over financial positions."
+    },
+    {
+        title: "Loan",
+        link: "Loans.html",
+        linkText: "Loan Origination and Credit Risk Solutions",
+        desc: "Improve loan origination, credit decisioning, and portfolio management."
+    }
+];
+
+const CHECKBOX_TO_SOLUTION = [
+    0, // Checkbox 1 → Secure
+    1, // Checkbox 2 → Treasury
+    2, // Checkbox 3 → Loan
+    2, // Checkbox 4 → Loan
+    1, // Checkbox 5 → Treasury
+    0, // Checkbox 6 → Secure
+    0, // Checkbox 7 → Secure
+    2, // Checkbox 8 → Loan
+    1  // Checkbox 9 → Treasury
+];
+
+    function checkIconSvg(){
+      return '<svg viewBox="0 0 12 12" fill="none"><path d="M2 6.2L4.6 8.8L10 3" stroke="#2f6df6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    }
+
+    function buildRecommendation(){
+      const checks = Array.from(document.querySelectorAll('.gs-check input[type="checkbox"]'));
+     
+ let picks = checks
+    .map((checkbox, index) => {
+        if (!checkbox.checked) return null;
+
+        return CHECKBOX_TO_SOLUTION[index];
+    })
+    .filter(id => id !== null);
+
+
+    // Remove duplicate solution IDs
+    picks = [...new Set(picks)];
+
+    // Convert IDs into solution objects
+    picks = picks.map(id => SOLUTIONS[id]);
+
+      gsrGrid.innerHTML = picks.map(sol => `
+        <div class="gsr-card">
+          <div class="gsr-card-top">
+            <span class="gsr-check">${checkIconSvg()}</span>
+            <h3><a href="${sol.link}">
+                    ${sol.linkText}
+                </a>
+            </h3>
+          </div>
+          <p>${sol.desc}</p>
+        </div>
+      `).join('');
+
+      gsrCompany.textContent = company.value.trim() || 'your company';
+    }
+
+    function openModal(){
+      lastFocused = document.activeElement;
+      buildRecommendation();
+      form.hidden = true;
+      panel.hidden = false;
+      modal.classList.add('is-result');
+      overlay.classList.add('is-open');
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(){
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    }
+    function refreshCta(){
+      cta.disabled = !(company.value.trim() !== '' && email.validity.valid && email.value.trim() !== '');
+    }
+    function showRecommendation(){
+      buildRecommendation();
+      form.hidden = true;
+      panel.hidden = false;
+      modal.classList.add('is-result');
+    }
+
+    openBtn.addEventListener('click', (e) => {
+      if (openBtn.disabled) return;
+      e.preventDefault();
+      openModal();
+    });
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeModal();
+    });
+    company.addEventListener('input', refreshCta);
+    email.addEventListener('input', refreshCta);
+    cta.addEventListener('click', (e) => {
+      if (cta.disabled) return;
+      e.preventDefault();
+      showRecommendation();
+    });
+  })();
+</script>
+
+</body>
+</html>
