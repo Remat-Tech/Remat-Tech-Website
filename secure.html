@@ -16,13 +16,10 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo">
-     <svg class="mark" viewBox="0 0 32 32" fill="none">
-        <rect width="32" height="32" rx="8" fill="#2f6df6"/>
-        <path d="M8 24V8 H15 C17.5 8 19 9.5 19 12 C19 14.5 17.5 16 15 16 H8 L18 24" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M22 9H28 M25 9V24" stroke="#28d6ad" stroke-width="2.4" stroke-linecap="round"/>
-      </svg>
-      <span>Remat Technologies</span>
+      <img class="mark" src="images/remat-mark.png" alt="Remat Technologies">
+      <span class="logo-text"><strong>Remat</strong> Technologies</span>
     </a>
+
 
     <ul class="nav-links" id="navLinks">
 
@@ -118,27 +115,38 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="cbfi-hero">
-  <div class="cbfi-lines">
-    <svg viewBox="0 0 1200 540" preserveAspectRatio="xMidYMid slice" fill="none">
-      <g stroke="rgba(100,130,200,.13)" stroke-width="1.2">
-        <line x1="0" y1="540" x2="600" y2="0"/><line x1="200" y1="540" x2="800" y2="0"/>
-        <line x1="400" y1="540" x2="1000" y2="0"/><line x1="600" y1="540" x2="1200" y2="0"/>
-        <line x1="800" y1="540" x2="1200" y2="100"/>
-        <line x1="0" y1="180" x2="1200" y2="120"/><line x1="0" y1="340" x2="1200" y2="280"/>
-        <line x1="0" y1="460" x2="1200" y2="420"/>
-      </g>
-    </svg>
+<section class="hero" id="top">
+
+  <!-- full-bleed looping background video -->
+  <video class="hero-bg-video" autoplay muted loop playsinline preload="auto">
+     <source src="videos/Secure Communication (1).mp4" type="video/mp4">
+  </video>
+  </video>
+  <div class="hero-video-overlay"></div>
+
+  <div class="hero-inner">
+    <span class="eyebrow dark reveal">Solutions</span>
+    <h1 class="reveal hero-h1-video">Secure Enterprise Communication <span class="grad">and Workflow Platform.</span></h1>
+
+    <p class="lead reveal hero-lead-video">A purpose-built platform for financial institutions that need secure, compliant communication and workflow infrastructure without compromise.</p>
+
+    <div class="hero-actions reveal">
+       <a href="get-started.html" class="btn btn-primary">Get Started
+        <svg viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+       <a href="#" class="btn btn-outline light js-open-demo">Book a Demo</a>
+    </div>
   </div>
-  <div class="cbfi-hero-inner">
-    <span class="eyebrow reveal">Solutions</span>
-    <h1 class="reveal">Secure Enterprise Communication and Workflow Platform  </h1>
-    <p class="reveal">A purpose-built platform for financial institutions that need secure, compliant communication and workflow infrastructure without compromise. </p>
-    <a href="#" class="btn btn-primary reveal js-open-demo">Book a Demo
-      <svg viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-  </div>
- </section>
+</section>
+
+<!-- ================= EXPLAINER VIDEO ================= -->
+<div class="vault-banner reveal">
+   <!--
+  <video class="vault-video" autoplay loop muted playsinline>
+    <source src="assets/video/treasury-vault.mp4" type="video/mp4">
+  </video>
+  -->
+</div>
 
 <!-- ================= OPERATE SEAMLESSLY ================= -->
 <section class="operate">
